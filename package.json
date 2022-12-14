@@ -4,6 +4,8 @@
     "description": "Express/Typescript API",
     "main": "index.js",
     "scripts": {
+        "start": "tsc && node --unhandled-rejections=strict ./dist/app.js",
+        "debug": "export DEBUG=app && npm run start",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
